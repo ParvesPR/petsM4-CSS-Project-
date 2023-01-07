@@ -1,4 +1,89 @@
-body{
-    background-color: black;
-    color: white;
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 1280px;
+    padding: 0px 15px;
+    margin: 15px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVIGATION MENU */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 3rem;
+}
+
+.navbar-title {
+    padding: 0px 10px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.menu-wrapper {
+    display: flex;
+}
+
+.menu-wrapper li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.menu-wrapper li a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.menu-wrapper li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: hidden;
+    border-bottom: 0px solid #e02c6e00;
+    transition: .2s ease-in-out;
+}
+
+.navbar-btn {
+    border: 2px solid #ED6436;
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem !important;
+}
+
+/* NAVIGATION HOVER EFFECT */
+.menu-wrapper li a:hover {
+    color: #ED6436;
+}
+.menu-wrapper li a:hover::after{
+    border-bottom: 3px solid #ED6436;
 }
