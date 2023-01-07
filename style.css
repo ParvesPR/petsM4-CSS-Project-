@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 1280px;
-    padding: 0px 15px;
+    padding: 0px 25px;
     margin: 15px auto;
 }
 
@@ -24,6 +24,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 11;
 }
 
 .navbar-logo {
@@ -84,6 +86,47 @@ a {
 .menu-wrapper li a:hover {
     color: #ED6436;
 }
-.menu-wrapper li a:hover::after{
+
+.menu-wrapper li a:hover::after {
     border-bottom: 3px solid #ED6436;
+}
+
+/* BANNER SECTION */
+.banner-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.banner-content{
+    padding-left: 25px;
+    margin-top: -110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.banner-content h1{
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+.banner-content p{
+    font-size: 1.2rem;
+}
+
+.banner-img img {
+    padding-top: 5px;
+    width: 100%;
+    transform: scaleX(-1);
+}
+.icon-wrap{
+    display: flex;
+    font-size: 1.3rem;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    margin-right: 2rem;
+}
+.icon h3{
+    margin-left: 8px;
 }
