@@ -19,6 +19,16 @@ a {
     text-decoration: none;
 }
 
+.global-btn {
+    border: 2px solid #ED6436;
+    padding: 1rem 1.4rem;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem !important;
+}
+
 /* NAVIGATION MENU */
 .navbar {
     display: flex;
@@ -72,7 +82,7 @@ a {
     transition: .2s ease-in-out;
 }
 
-.navbar-btn {
+.btn {
     border: 2px solid #ED6436;
     padding: 0.6rem 1rem;
     border-radius: 25px;
@@ -96,7 +106,8 @@ a {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
 }
-.banner-content{
+
+.banner-content {
     padding-left: 25px;
     margin-top: -110px;
     display: flex;
@@ -104,12 +115,15 @@ a {
     align-items: flex-start;
     justify-content: center;
 }
-.banner-content h1{
+
+.banner-content h1 {
     font-size: 3.8rem;
     font-weight: 800;
 }
-.banner-content p{
+
+.banner-content p {
     font-size: 1.2rem;
+    padding: 1rem 0rem;
 }
 
 .banner-img img {
@@ -117,16 +131,86 @@ a {
     width: 100%;
     transform: scaleX(-1);
 }
-.icon-wrap{
+
+.icon-wrap {
     display: flex;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
-.icon{
+
+.icon {
     display: flex;
     align-items: center;
     margin: 10px 0px;
     margin-right: 2rem;
 }
-.icon h3{
+
+.icon h3 {
     margin-left: 8px;
+}
+
+.banner-btn-wrapper {
+    padding: 40px 0px;
+}
+
+.banner-btn {
+    margin-right: 20px;
+    background-color: #ED6436;
+    color: #fff;
+}
+
+/* CARD CSS */
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    margin: 0px 50px;
+    margin-top: 50px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 472px;
+    height: 150px;
+    margin: auto;
+    background: #FEE4D1;
+    border-radius: 50%;
+    text-align: center;
+    left: -65px;
+    right: 0;
+    top: -28%;
+    transform: skew(17deg, -27deg);
+    z-index: -1;
+}
+
+.card {
+    position: relative;
+    background-color: #FED9BD;
+   
+    padding: 50px 30px;
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 11;
+}
+.card-icon{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0px auto;
+    color: white;
+}
+
+.card h1 {
+    margin: 20px 0px;
+    font-weight: 700;
+}
+
+.card p {
+    line-height: 25px;
+    color: #767676;
+    margin-bottom: 30px;
+}
+
+.card a {
+    color: #000;
+    font-size: 1.2rem;
 }
