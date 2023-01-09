@@ -116,7 +116,7 @@ a {
     justify-content: center;
 }
 
-.banner-content h1 {
+.content-title {
     font-size: 3.8rem;
     font-weight: 800;
 }
@@ -182,6 +182,7 @@ a {
     transform: skew(17deg, -27deg);
     z-index: -1;
 }
+
 #card2::before {
     content: "";
     position: absolute;
@@ -197,6 +198,7 @@ a {
     transform: skew(17deg, -27deg);
     z-index: -1;
 }
+
 #card3::before {
     content: "";
     position: absolute;
@@ -212,6 +214,7 @@ a {
     transform: skew(17deg, -27deg);
     z-index: -1;
 }
+
 #card4::before {
     content: "";
     position: absolute;
@@ -282,4 +285,48 @@ a {
 .card a {
     color: #000;
     font-size: 1.2rem;
+}
+
+/* HERO SECTION */
+.hero-section {
+    margin: 50px 0px;
+}
+
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.sub-title {
+    color: #ED6436;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.content-text {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.content-list {
+    margin: 30px 0px;
+}
+
+.content-list li {
+    font-size: 1.2rem;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.content-icon{
+    margin-right: 10px;
+    color: #ED6436;
+    font-weight: 400;
 }
