@@ -10,9 +10,9 @@ body {
 }
 
 .container {
-    width: 1280px;
+    width: 1200px;
     padding: 0px 25px;
-    margin: 15px auto;
+    margin: 40px auto;
 }
 
 a {
@@ -152,7 +152,7 @@ a {
     padding: 40px 0px;
 }
 
-.banner-btn {
+.button {
     margin-right: 20px;
     background-color: #ED6436;
     color: #fff;
@@ -325,8 +325,85 @@ a {
     list-style: none;
     margin-bottom: 20px;
 }
-.content-icon{
+
+.content-icon {
     margin-right: 10px;
     color: #ED6436;
     font-weight: 400;
+}
+
+/* FEATURE SECTION CSS */
+.feature-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.feature-card {
+    position: relative;
+    height: 350px;
+}
+
+.feature-card::before {
+    content: "";
+    background-color: #181818;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 30px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.feature-card:hover::before {
+    opacity: 0.3;
+}
+
+.feature-card-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 30px;
+}
+
+.card-caption {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    top: 50%;
+    height:fit-content;
+    transform: translateY(-50%);
+    transition: all .5s;
+    opacity: 0;
+}
+.card-caption p{
+    margin-bottom: .8rem;
+    font-weight: 700;
+}
+.card-caption h3{
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: .8rem 0rem;
+}
+
+.feature-card:hover .card-caption{
+    opacity: 1;
 }
