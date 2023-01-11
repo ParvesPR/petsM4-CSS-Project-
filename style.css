@@ -12,7 +12,7 @@ body {
 .container {
     width: 1200px;
     padding: 0px 25px;
-    margin: 40px auto;
+    margin: 60px auto;
 }
 
 a {
@@ -389,21 +389,49 @@ a {
     align-items: center;
     justify-items: center;
     top: 50%;
-    height:fit-content;
+    height: fit-content;
     transform: translateY(-50%);
     transition: all .5s;
     opacity: 0;
 }
-.card-caption p{
+
+.card-caption p {
     margin-bottom: .8rem;
     font-weight: 700;
 }
-.card-caption h3{
+
+.card-caption h3 {
     font-weight: 800;
     font-size: 1.5rem;
     padding: .8rem 0rem;
 }
 
-.feature-card:hover .card-caption{
+.feature-card:hover .card-caption {
     opacity: 1;
+}
+
+/* PROGRESS BAR SECTION CSS */
+.progress-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-title h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
+.progress-title .red-text {
+    color: #ED6436;
+}
+
+.progress-title .bone {
+    margin-right: 70px;
+    position: relative;
+    transition: transform 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.bone:hover {
+    transform: rotate(8deg);
 }
