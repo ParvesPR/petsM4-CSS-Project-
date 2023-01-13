@@ -475,10 +475,11 @@ a {
     border-bottom-right-radius: 30px;
 }
 
-.price-plan {
+.price-table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 15px;
+    padding: 50px 0px;
 }
 
 .price-icon {
@@ -489,7 +490,7 @@ a {
     display: block;
 }
 
-.price-list {
+.price-feature {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -520,4 +521,81 @@ span.price-num {
 
 #price-table .price-icon {
     color: #fff;
+}
+
+#content-icon {
+    color: #fff;
+}
+
+/* PRICE OFFER SECTION CSS */
+.price-title {
+    text-align: center;
+    padding: 30px 0px;
+    margin-bottom: 10px;
+    font-size: 3.6rem;
+    font-weight: 800;
+}
+
+.price-offer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.price-offer-title {
+    display: flex;
+    align-items: center;
+}
+
+.price-offer-title span {
+    font-size: 2rem;
+}
+
+.price-offer-title h1 {
+    margin-left: 10px;
+    font-size: 1.6rem;
+}
+
+.menu-item {
+    margin-top: 30px;
+}
+
+.price-offer-list {
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+}
+
+.price-offer-list h3 {
+    text-transform: uppercase;
+    color: #ED6436;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.line {
+    display: flex;
+    flex: 1 1 auto;
+    background-image: radial-gradient(circle closest-side, #9a9a9a 99%, rgba(255, 255, 255, 0) 1%);
+    background-size: 12px 2px;
+    background-position: center;
+    margin: .2em .5em;
+    background-repeat: repeat;
+    height: 2px;
+}
+
+.price-offer-list span {
+    font-weight: 800;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.menu-item p {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    font-weight: 400;
 }
