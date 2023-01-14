@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 1200px;
-    padding: 0px 25px;
+    padding: 0px 30px;
     margin: 40px auto;
 }
 
@@ -598,4 +598,38 @@ span.price-num {
     font-size: 1.2rem;
     line-height: 1.9rem;
     font-weight: 400;
+}
+
+/* OUR TEAM SECTION CSS */
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 30px;
+}
+
+.team-card {
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+}
+
+.team-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+
+p.team-position {
+    text-transform: uppercase;
+    color: #ED6436;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.team-card .global-btn {
+    margin: auto;
 }
