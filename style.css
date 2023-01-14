@@ -665,7 +665,7 @@ p.team-position {
 .instructor-content-icon {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 57px;
+    column-gap: 50px;
 }
 
 .instructor-content-icon span {
@@ -675,6 +675,36 @@ p.team-position {
     margin-bottom: 10px;
 }
 
+.instructor-content-icon h3 {
+    color: #ED6436;
+    text-transform: uppercase;
+    font-weight: 800;
+    word-spacing: 6px;
+    margin-bottom: 10px;
+}
+
+.instructor-content-icon p {
+    line-height: 1.6rem;
+}
+
 .instructor-image img {
     width: 100%;
+}
+
+.instructor2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.pet-instructor2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+.instructor2 h1 {
+    display: inline-block;
+    margin-right: 20px;
 }
