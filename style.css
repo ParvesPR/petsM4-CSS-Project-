@@ -708,3 +708,74 @@ p.team-position {
     display: inline-block;
     margin-right: 20px;
 }
+
+/* CONTACT FORM SECTION CSS */
+.contact-form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin-left: 50px;
+}
+
+form.form p {
+    font-size: 1.2rem;
+    color: red;
+    font-weight: 700;
+}
+
+form.form h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+form.form {
+    max-width: 450px;
+    margin: 0px auto;
+    background: #f2f2f4;
+    background: #f2f2f4;
+    padding: 2rem;
+    border-radius: 30px;
+}
+form.form p {
+    font-size: 1.2rem;
+    color: red;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+form.form h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-left: 5px;
+}
+
+form.form input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 25px 30px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+form.form textarea {
+    display: block;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+input::placeholder, textarea::placeholder {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+}
+.contact-image img {
+    width: 100%;
+}
