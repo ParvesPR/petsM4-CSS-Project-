@@ -734,13 +734,13 @@ form.form {
     max-width: 450px;
     margin: 0px auto;
     background: #f2f2f4;
-    background: #f2f2f4;
     padding: 2rem;
     border-radius: 30px;
 }
+
 form.form p {
     font-size: 1.2rem;
-    color: red;
+    color: #ED6436;
     font-weight: 700;
     margin-left: 5px;
 }
@@ -753,29 +753,46 @@ form.form h1 {
     margin-left: 5px;
 }
 
-form.form input {
+form.form input, textarea {
     display: block;
     margin-bottom: 20px;
     padding: 25px 30px;
     border-radius: 30px;
-    border: none;
+    border: 1px solid #f2f2f4;
     outline: none;
     width: 100%;
+    transition: all .5s;
 }
-form.form textarea {
-    display: block;
-    padding: 20px 30px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    width: 100%;
+
+.form input:focus {
+    border: 1px solid #ED6436;
 }
+
+.form textarea:focus {
+    border: 1px solid #ED6436;
+}
+
+.form input:hover {
+    border: 1px solid #ED6436;
+}
+.form textarea:hover {
+    border: 1px solid #ED6436;
+}
+
 input::placeholder, textarea::placeholder {
     font-size: 1.2rem;
     font-weight: 400;
     font-family: 'Nunito', sans-serif;
 }
+
+.form .global-btn {
+    padding: 1rem 3rem;
+    font-size: 1.2rem !important;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
 .contact-image img {
     width: 100%;
 }
