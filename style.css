@@ -775,6 +775,7 @@ form.form input, textarea {
 .form input:hover {
     border: 1px solid #ED6436;
 }
+
 .form textarea:hover {
     border: 1px solid #ED6436;
 }
@@ -795,4 +796,80 @@ input::placeholder, textarea::placeholder {
 
 .contact-image img {
     width: 100%;
+}
+
+/* ADDRESS SECTION CSS */
+.address-section {
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.address {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.address-map .map-shape {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform: scale(1.06);
+}
+
+.address-map .google-map {
+    height: 100%;
+    min-height: 15rem;
+    position: relative;
+}
+
+.address-card {
+    max-width: 360px;
+    background: #f2f2f4;
+    border-radius: 30px;
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-header img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card-body {
+    padding: 1rem 1.4rem;
+}
+
+.card-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card-image span {
+    color: #ED6436;
+    font-size: 2rem;
+}
+
+.card-content h3 {
+    color: #ED6436;
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    line-height: 27px;
 }
