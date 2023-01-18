@@ -873,3 +873,13 @@ input::placeholder, textarea::placeholder {
 .card-content p {
     line-height: 27px;
 }
+
+/* FOOTER SECTION CSS */
+footer.footer {
+    text-align: center;
+    background-color: #ED6436;
+    color: #fff;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
