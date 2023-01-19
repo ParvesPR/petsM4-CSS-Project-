@@ -885,8 +885,14 @@ footer.footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    align-items: center;
     column-gap: 30px;
+}
+
+.about-title {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #ED6436;
 }
 
 .about-image {
@@ -934,4 +940,50 @@ footer.footer {
     color: #ED6436;
     border: 2px solid #ED6436;
     cursor: pointer;
+}
+
+.about-item p span {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.about-item p {
+    color: #181818;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.about-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.about-input input {
+    padding: .6rem 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    color: #181818;
+    transition: 0.4s;
+    box-shadow: none;
+    outline: none;
+}
+.about-input input:hover{
+    border: 1px solid #ED6436;
+}
+.about-input input::placeholder{
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+}
+.about-input button{
+    background-color: #ED6436;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Nunito';
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: .4rem 1rem;
 }
