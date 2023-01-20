@@ -12,7 +12,7 @@ body {
 .container {
     width: 1200px;
     padding: 0px 30px;
-    margin: 40px auto;
+    margin: 60px auto;
 }
 
 a {
@@ -41,7 +41,10 @@ a {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    width: 100%;
     z-index: 11;
+    margin: auto;
+    padding: 20px 40px;
 }
 
 .navbar-logo {
@@ -89,11 +92,13 @@ a {
 }
 
 .btn {
+    font-family: 'Nunito', sans-serif;
     border: 2px solid #ED6436;
     padding: 0.6rem 1rem;
+    background-color: transparent;
     border-radius: 25px;
     border-top-left-radius: 0px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem !important;
 }
@@ -114,7 +119,7 @@ a {
 }
 
 .banner-content {
-    padding-left: 25px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -122,7 +127,7 @@ a {
 }
 
 .content-title {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     font-weight: 800;
 }
 
@@ -168,8 +173,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
-    margin: 0px 30px;
-    margin-top: 50px;
+    margin: 50px 30px;
 }
 
 #card1::before {
@@ -241,7 +245,7 @@ a {
     padding-bottom: 50px;
     border-radius: 35px;
     overflow: hidden;
-    z-index: 11;
+    z-index: 1;
     margin: 0px 10px;
 }
 
@@ -294,7 +298,7 @@ a {
 
 /* HERO SECTION */
 .hero-section {
-    margin: 50px 0px;
+    margin: 60px 0px;
 }
 
 .hero-wrapper {
@@ -422,11 +426,6 @@ a {
     align-items: center;
 }
 
-.progress-title h1 {
-    font-size: 3.6rem;
-    font-weight: 800;
-}
-
 .progress-title .bone {
     margin-right: 50px;
     position: relative;
@@ -529,12 +528,10 @@ span.price-num {
 }
 
 /* PRICE OFFER SECTION CSS */
-.price-title {
+.price-offer-wrapper .content-title {
     text-align: center;
     padding: 30px 0px;
     margin-bottom: 10px;
-    font-size: 3.6rem;
-    font-weight: 800;
 }
 
 .price-offer {
@@ -602,6 +599,11 @@ span.price-num {
 }
 
 /* OUR TEAM SECTION CSS */
+.our-team h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .team-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -637,9 +639,7 @@ p.team-position {
 
 /* PET INSTRUCTOR SECTION CSS */
 .pet-instructor1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .instructor {
@@ -647,11 +647,6 @@ p.team-position {
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     column-gap: 10px;
-}
-
-.instructor-name h1 {
-    font-weight: 800;
-    font-size: 3.6rem;
 }
 
 .instructor-name p {
@@ -701,7 +696,7 @@ p.team-position {
 .pet-instructor2 {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-right: 20px;
+    margin-right: 60px;
 }
 
 .instructor2 h1 {
@@ -736,21 +731,6 @@ form.form {
     background: #f2f2f4;
     padding: 2rem;
     border-radius: 30px;
-}
-
-form.form p {
-    font-size: 1.2rem;
-    color: #ED6436;
-    font-weight: 700;
-    margin-left: 5px;
-}
-
-form.form h1 {
-    font-size: 3.6rem;
-    font-weight: 800;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    margin-left: 5px;
 }
 
 form.form input, textarea {
@@ -970,15 +950,18 @@ footer.footer {
     box-shadow: none;
     outline: none;
 }
-.about-input input:hover{
+
+.about-input input:hover {
     border: 1px solid #ED6436;
 }
-.about-input input::placeholder{
+
+.about-input input::placeholder {
     text-align: center;
     font-size: 1rem;
     color: #000;
 }
-.about-input button{
+
+.about-input button {
     background-color: #ED6436;
     color: #fff;
     font-weight: 700;
