@@ -29,6 +29,7 @@ a {
     font-size: 1rem !important;
 }
 
+
 .red-text {
     color: #ED6436;
     font-weight: 800;
@@ -38,6 +39,7 @@ a {
 /* NAVIGATION MENU */
 .navbar {
     display: flex;
+    background-color: #fff;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -101,6 +103,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem !important;
+    transition: all .5s;
 }
 
 /* NAVIGATION HOVER EFFECT */
@@ -166,6 +169,7 @@ a {
     margin-right: 20px;
     background-color: #ED6436;
     color: #fff;
+    transition: all .5s,
 }
 
 /* CARD CSS */
@@ -969,4 +973,39 @@ footer.footer {
     letter-spacing: 2px;
     cursor: pointer;
     padding: .4rem 1rem;
+}
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .banner-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .banner-content {
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    .content-title {
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+        font-size: 2rem;
+    }
+
+    .icon-wrap {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+
+    .banner-btn-wrapper {
+        margin: auto;
+    }
 }
