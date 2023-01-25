@@ -190,6 +190,7 @@ nav ul li a:hover::after {
     margin: 50px 30px;
 }
 
+
 #card1::before {
     content: "";
     position: absolute;
@@ -201,7 +202,7 @@ nav ul li a:hover::after {
     text-align: center;
     left: -65px;
     right: 0;
-    top: -18%;
+    top:-20%;
     transform: skew(17deg, -27deg);
     z-index: -1;
 }
@@ -217,7 +218,7 @@ nav ul li a:hover::after {
     text-align: center;
     left: -65px;
     right: 0;
-    top: -18%;
+    top:-20%;
     transform: skew(17deg, -27deg);
     z-index: -1;
 }
@@ -233,7 +234,7 @@ nav ul li a:hover::after {
     text-align: center;
     left: -65px;
     right: 0;
-    top: -18%;
+    top:-20%;
     transform: skew(17deg, -27deg);
     z-index: -1;
 }
@@ -249,7 +250,7 @@ nav ul li a:hover::after {
     text-align: center;
     left: -65px;
     right: 0;
-    top: -18%;
+    top:-20%;
     transform: skew(17deg, -27deg);
     z-index: -1;
 }
@@ -1022,6 +1023,7 @@ footer.footer {
         margin: 30px 0;
     }
 
+    /* BANNER SECTION RESPONSIVE */
     .banner-wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1050,19 +1052,25 @@ footer.footer {
         margin: auto;
     }
 
-    .card-wrapper {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 20px;
+    /* CARD SECTION RESPONSIVE */
+    #card-section {
+        width: 100%;
     }
 
+    .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+        margin: 0px;
+    }
+
+    /* HERO SECTION RESPONSIVE */
     .hero-wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 
     .hero-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         margin-top: 20px;
     }
 
@@ -1075,5 +1083,30 @@ footer.footer {
     .content-list {
         text-align: start;
 
+    }
+
+    /* FEATURE SECTION RESPONSIVE */
+    .feature-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-title h1 {
+        font-size: 2.6rem;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .feature-button {
+        display: inline-block;
+        margin: 30px;
+    }
+
+    .feature-card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
