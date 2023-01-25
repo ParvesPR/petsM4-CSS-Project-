@@ -337,6 +337,7 @@ nav ul li a:hover::after {
     width: 80%;
     font-size: 1.2rem;
     line-height: 30px;
+    margin-bottom: 30px;
 }
 
 .content-list {
@@ -996,7 +997,7 @@ footer.footer {
         font-size: 30px;
     }
 
-    #click:checked ~ ul {
+    #click:checked~ul {
         transform: scaleY(0);
     }
 
@@ -1053,5 +1054,26 @@ footer.footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
+    }
+
+    .hero-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+        margin-top: 20px;
+    }
+
+    .hero-content, .content-text {
+        width: 95%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .content-list {
+        text-align: start;
+
     }
 }
