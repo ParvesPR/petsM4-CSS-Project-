@@ -471,6 +471,7 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-bottom: 15px;
 }
 
 .progress-grid h3 {
@@ -1027,7 +1028,15 @@ footer.footer {
     .container {
         width: 100%;
         padding: 0px 20px;
-        margin: 40px auto;
+        margin: 60px auto;
+    }
+
+    .content-title, .red-text {
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+        font-size: 2.2rem;
     }
 
     .banner-wrapper {
@@ -1039,13 +1048,6 @@ footer.footer {
     .banner-content {
         margin: 0 auto;
         padding: 0px 15px;
-    }
-
-    .content-title {
-        display: block;
-        margin: auto;
-        margin-top: 80px;
-        font-size: 2.2rem;
     }
 
     .icon-wrap {
@@ -1110,5 +1112,29 @@ footer.footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 15px;
+    }
+
+    /* PROGRESS SECTION RESPONSIVE */
+    .progress-title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .progress-title h1 {
+        display: inline;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    .progress-title .bone {
+        margin-right: 0px;
+        margin-top: 30px;
+        width: 90%;
+    }
+    .progress-grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        text-align: center;
+        margin: 50px auto;
     }
 }
