@@ -492,6 +492,10 @@ nav ul li a:hover::after {
     border-bottom-right-radius: 30px;
 }
 
+#price-table .sub-title {
+    color: #fff;
+}
+
 .price-table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -990,6 +994,19 @@ footer.footer {
 
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0px 20px;
+        margin: 100px auto;
+    }
+
+    .content-title, .red-text {
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+        font-size: 2.2rem;
+    }
+
     nav {
         padding: 10px;
     }
@@ -1025,20 +1042,6 @@ footer.footer {
     }
 
     /* BANNER SECTION RESPONSIVE */
-    .container {
-        width: 100%;
-        padding: 0px 20px;
-        margin: 60px auto;
-    }
-
-    .content-title, .red-text {
-        text-align: center;
-        display: block;
-        margin: auto;
-        margin-top: 80px;
-        font-size: 2.2rem;
-    }
-
     .banner-wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -1131,10 +1134,34 @@ footer.footer {
         margin-top: 30px;
         width: 90%;
     }
+
     .progress-grid {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 30px;
         text-align: center;
         margin: 50px auto;
+    }
+
+    /* PRICE PLAN TABLE RESPONSIVE */
+    .price-table {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+        padding: 0px 0px;
+    }
+
+    .price-plan-table {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .price-plan-table .content-title {
+        margin-top: 0px;
+    }
+
+    #price-table {
+        transform: scale(1);
+    }
+
+    span.price-num {
+        font-size: 2.4rem;
     }
 }
