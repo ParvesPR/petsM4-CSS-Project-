@@ -1164,4 +1164,16 @@ footer.footer {
     span.price-num {
         font-size: 2.4rem;
     }
+
+    /* PRICE OFFER LIST RESPONSIVE */
+    .price-offer {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .menu-item {
+        margin-top: 20px;
+    }
+    .price-offer-list h3,span{
+        font-size: 1.1rem;
+    }
 }
