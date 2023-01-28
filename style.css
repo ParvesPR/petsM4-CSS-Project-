@@ -1194,7 +1194,41 @@ footer.footer {
         font-size: 1rem;
         margin-bottom: 15px;
     }
-    .team-card .global-btn{
+
+    .team-card .global-btn {
         display: inline-block;
+    }
+
+    /* PET INSTRUCTOR SECTION1 RESPONSIVE */
+    .pet-instructor1, .pet-instructor2 {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .instructor, .instructor2 {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .instructor, .instructor2{
+        text-align: center;
+    }
+    .instructor-content{
+        margin-bottom: 30px;
+    }
+    .instructor h1, .instructor2 h1{
+        display: block;
+        margin: 0px;
+    }
+    .instructor-name p{
+        padding: 0px 10px;
+        font-weight: 400;
+    }
+    .instructor-content-icon {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .instructor-content-icon p{
+        line-height: 1.4rem;
     }
 }
