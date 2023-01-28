@@ -1204,31 +1204,70 @@ footer.footer {
         margin-left: 0px;
         margin-right: 0px;
     }
+
     .instructor, .instructor2 {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-items: center;
     }
-    .instructor, .instructor2{
+
+    .instructor, .instructor2 {
         text-align: center;
     }
-    .instructor-content{
+
+    .instructor-content {
         margin-bottom: 30px;
     }
-    .instructor h1, .instructor2 h1{
+
+    .instructor h1, .instructor2 h1 {
         display: block;
         margin: 0px;
     }
-    .instructor-name p{
+
+    .instructor-name p {
         padding: 0px 10px;
         font-weight: 400;
     }
+
     .instructor-content-icon {
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         row-gap: 15px;
+        padding: 0px 10px;
     }
-    .instructor-content-icon p{
+
+    .instructor-content-icon p {
         line-height: 1.4rem;
+    }
+
+    /* CONTACT FORM SECTION RESPONSIVE */
+    .contact-form-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
+    }
+
+    .contact-form {
+        padding: 0px 10px;
+    }
+
+    form.form {
+        padding: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    form.form p {
+        font-size: 1.1rem;
+        margin: 5px 0px;
+    }
+
+    form.form h1 {
+        font-size: 2.2rem;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    form.form input, textarea {
+        padding: 20px 25px;
     }
 }
