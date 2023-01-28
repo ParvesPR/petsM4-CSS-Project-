@@ -628,6 +628,7 @@ span.price-num {
 .team-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     align-items: center;
     column-gap: 30px;
 }
@@ -646,7 +647,7 @@ span.price-num {
     padding: 10px 0px;
 }
 
-p.team-position {
+.team-position {
     text-transform: uppercase;
     color: #ED6436;
     font-size: 1.1rem;
@@ -1170,10 +1171,30 @@ footer.footer {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 30px;
     }
+
     .menu-item {
         margin-top: 20px;
     }
-    .price-offer-list h3,span{
+
+    .price-offer-list h3, span {
         font-size: 1.1rem;
+    }
+
+    /* OUR TEAM SECTION RESPONSIVE */
+    .team-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+    .team-name {
+        font-size: 1.3rem;
+    }
+
+    .team-position {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .team-card .global-btn{
+        display: inline-block;
     }
 }
