@@ -872,16 +872,6 @@ input::placeholder, textarea::placeholder {
     line-height: 27px;
 }
 
-/* FOOTER SECTION CSS */
-footer.footer {
-    text-align: center;
-    background-color: #ED6436;
-    color: #fff;
-    padding: 2rem;
-    font-size: 1.2rem;
-    font-weight: normal;
-}
-
 /* ABOUT US SECTION CSS */
 .about-us {
     display: grid;
@@ -955,14 +945,14 @@ footer.footer {
     margin-bottom: 10px;
 }
 
-.about-input {
+.about-button {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
 }
 
-.about-input input {
+.about-button input {
     padding: .6rem 1.5rem;
     background-color: #ffffff;
     border: 1px solid #ccc;
@@ -973,17 +963,17 @@ footer.footer {
     outline: none;
 }
 
-.about-input input:hover {
+.about-button input:hover {
     border: 1px solid #ED6436;
 }
 
-.about-input input::placeholder {
+.about-button input::placeholder {
     text-align: center;
     font-size: 1rem;
     color: #000;
 }
 
-.about-input button {
+.about-button button {
     background-color: #ED6436;
     color: #fff;
     font-weight: 700;
@@ -991,6 +981,16 @@ footer.footer {
     letter-spacing: 2px;
     cursor: pointer;
     padding: .4rem 1rem;
+}
+
+/* FOOTER SECTION CSS */
+footer.footer {
+    text-align: center;
+    background-color: #ED6436;
+    color: #fff;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: normal;
 }
 
 /* MOBILE RESPONSIVE */
@@ -1305,5 +1305,37 @@ footer.footer {
     .card-content h3 {
         font-size: 1.3rem;
 
+    }
+
+    /* ABOUT US SECTION  RESPONSIVE*/
+    .about-us {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        text-align: center;
+        row-gap: 20px;
+    }
+
+    .about-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .about-item p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .about-button {
+        display: block;
+    }
+
+    .about-button input, .about-button button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .about-button .global-btn {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 0px;
     }
 }
